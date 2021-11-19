@@ -14,16 +14,15 @@ import org.springframework.stereotype.Component;
 public class JwtUserDetailServiceImpl implements UserDetailsService {
 
     /**
-     * 用户登录
+     * 用户登录, 待实现
      * @param account 账号
      * securityUser.setLocked(true); 锁定用户
      * @return token
      */
     @Override
     public UserDetails loadUserByUsername(String account) {
-        String ok="1";
         SecurityUser securityUser= new SecurityUser();
-        return securityUser.setUsername("xiaoshu").setPassword("c7815b6d0e7585dfa10431e450e71db9").setUserId(1L);
+        return securityUser;
     }
 
 
