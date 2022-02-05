@@ -84,7 +84,7 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
             tokenHeader="Authorization";
         }
         response.addHeader(tokenHeader, tokenPrefix + token);
-        ResponseUtil.write(response, Result.ok("登录成功"));
+        ResponseUtil.write(response, Result.ok(tokenPrefix + token));
     }
 
     //对应 ->JwtUserDetailsServiceImpl loadUserByUsername()
