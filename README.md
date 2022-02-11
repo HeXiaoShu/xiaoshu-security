@@ -40,3 +40,8 @@ public class LoginUserDetailsService implements UserDetailsService {
 
 > 配置说明： 默认登陆接口 /login
 ![image-20211119115555289](./info.png)
+
+> 获取登录用户
+```java
+//方法参数： JwtTokenUtil
+```
